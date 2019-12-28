@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(25, 25, 25);
+	border: 1px solid red;
+	width: 100vw;
+	color: rgb(220, 220, 220);
+	font-family: 'Work Sans', sans-serif;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}

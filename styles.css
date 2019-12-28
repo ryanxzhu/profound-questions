@@ -27,15 +27,13 @@ div {
 	-webkit-tap-highlight-color: transparent;
 }
 
-#refreshIcon {
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
+#backIcon {
 	position: absolute;
 	cursor: pointer;
 	left: 0;
 	top: 0;
 }
 
-#refreshIcon:hover {
+#backIcon:hover {
 	opacity: 50%;
 }

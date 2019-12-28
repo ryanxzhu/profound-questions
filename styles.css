@@ -1,16 +1,17 @@
 body {
 	margin: 0;
-	background-color: rgb(25, 25, 25);
+	background-color: rgb(35, 35, 35);
 	cursor: pointer;
 }
 
 div {
 	margin: 0;
 	padding: 0;
-	background-color: rgb(25, 25, 25);
+	background-color: rgb(35, 35, 35);
 	width: 100vw;
 	color: rgb(220, 220, 220);
 	font-family: 'Work Sans', sans-serif;
+	font-weight: medium;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;

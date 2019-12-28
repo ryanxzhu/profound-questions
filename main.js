@@ -51,5 +51,20 @@ backIcon.addEventListener('mousedown', function() {
 	}
 });
 
+document.body.onkeyup = function(e) {
+	if (e.keyCode == 8 || e.keyCode == 37 || e.keyCode == 38) {
+		// 8 is backspace, 37 is left arrow, 38 is up arrow
+		if (count > 1) {
+			count--;
+			document.getElementsByTagName('div')[0].textContent = questionsList[count - 1];
+		}
+	}
+
+	if (e.keyCode == 32 || e.keyCode == 39 || e.keyCode == 40) {
+		// 32 is spacebar, 39 is right arrow, 40 is down arrow
+		newQuestion();
+	}
+};
+
 window.addEventListener('resize', updateSizes);
 window.addEventListener('orientationchange', updateSizes);

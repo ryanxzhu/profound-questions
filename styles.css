@@ -1,5 +1,9 @@
 body {
 	margin: 0;
+}
+
+div {
+	margin: 0;
 	padding: 0;
 	background-color: rgb(25, 25, 25);
 	width: 100vw;
@@ -18,4 +22,15 @@ body {
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 	-webkit-tap-highlight-color: transparent;
+}
+
+#refreshIcon {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	position: absolute;
+	cursor: pointer;
+}
+
+#refreshIcon:hover {
+	opacity: 50%;
 }

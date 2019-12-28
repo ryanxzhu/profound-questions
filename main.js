@@ -7,6 +7,10 @@ var count = 0;
 updateSizes();
 shuffleQuestions();
 newQuestion();
+document.fonts.ready.then(function() {
+	document.getElementsByTagName('div')[0].style.visibility = 'visible';
+	backIcon.style.visibility = 'visible';
+});
 
 //---------------------Functions---------------------
 

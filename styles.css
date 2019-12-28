@@ -11,10 +11,10 @@ div {
 	width: 100vw;
 	color: rgb(220, 220, 220);
 	font-family: 'Work Sans', sans-serif;
-	font-weight: medium;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+	visibility: hidden;
 }
 
 .noSelect {
@@ -32,6 +32,7 @@ div {
 	cursor: pointer;
 	left: 0;
 	top: 0;
+	visibility: hidden;
 }
 
 #backIcon:hover {

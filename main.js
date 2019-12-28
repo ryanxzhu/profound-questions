@@ -2,14 +2,11 @@ const backIcon = document.getElementById('backIcon');
 var questionsList = [];
 var count = 0;
 
-//---------------------Intiiate---------------------
+//---------------------Intitiate---------------------
 
 updateSizes();
 shuffleQuestions();
 newQuestion();
-document.fonts.ready.then(function() {
-	backIcon.style.visibility = 'visible';
-});
 
 //---------------------Functions---------------------
 
@@ -52,16 +49,14 @@ backIcon.addEventListener('mousedown', function() {
 });
 
 document.body.onkeyup = function(e) {
-	if (e.keyCode == 8 || e.keyCode == 37 || e.keyCode == 38) {
-		// 8 is backspace, 37 is left arrow, 38 is up arrow
+	if (e.keyCode == 8 /*backspace*/ || e.keyCode == 37 /*left arrow*/ || e.keyCode == 38 /*up arrow*/) {
 		if (count > 1) {
 			count--;
 			document.getElementsByTagName('div')[0].textContent = questionsList[count - 1];
 		}
 	}
 
-	if (e.keyCode == 32 || e.keyCode == 39 || e.keyCode == 40) {
-		// 32 is spacebar, 39 is right arrow, 40 is down arrow
+	if (e.keyCode == 32 /*spacebar*/ || e.keyCode == 39 /*right arrow*/ || e.keyCode == 40 /*down arrow*/) {
 		newQuestion();
 	}
 };

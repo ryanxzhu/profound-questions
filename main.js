@@ -13,8 +13,12 @@ function updateSizes() {
 	document.getElementsByTagName('div')[0].style.padding = '0px ' + window.innerWidth * 0.05 + 'px';
 	document.getElementsByTagName('div')[0].style.fontSize =
 		Math.sqrt(window.innerWidth * window.innerHeight) * 0.08 + 'px';
-	refreshIcon.style.width = window.innerWidth * 0.05 + 'px';
-	refreshIcon.style.margin = window.innerWidth * 0.01 + 'px';
+	refreshIcon.style.width = Math.sqrt(window.innerWidth * window.innerHeight) * 0.07 + 'px';
+	refreshIcon.style.margin =
+		Math.sqrt(window.innerWidth * window.innerHeight) * 0.02 +
+		'px ' +
+		Math.sqrt(window.innerWidth * window.innerHeight) * 0.05 +
+		'px';
 }
 
 function newQuestion() {
